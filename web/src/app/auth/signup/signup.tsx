@@ -51,7 +51,7 @@ export function SignupPage() {
     <div className="min-h-screen bg-bg-app flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <Logos.Logo className="h-16 mx-auto mb-6" />
+          <Logos.LogoAi4life className="mx-auto mb-6" />
           <h1 className="text-2xl font-semibold text-gray-800">
             Đăng ký tài khoản
           </h1>

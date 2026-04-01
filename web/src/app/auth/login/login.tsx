@@ -40,8 +40,8 @@ export function LoginPage() {
     <div className="min-h-screen bg-bg-app flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <div className="bg-[#00C999] w-32 h-32 flex items-center justify-center rounded-full mx-auto mb-4">
-          <Logos.Logo className="size-24" />
+          <div className="flex items-center justify-center rounded-full mx-auto mb-8">
+          <Logos.LogoAi4life className="" />
 
           </div>
           <h1 className="text-2xl font-semibold text-gray-800">

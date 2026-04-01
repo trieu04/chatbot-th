@@ -75,18 +75,20 @@ export function TitleSection({ onMenuClick }: { onMenuClick?: () => void }) {
 
       {/* Action buttons */}
       <div className="flex items-center gap-2 lg:gap-3">
-        {isAuthenticated ? (
-          <Select
-            aria-label="Select role"
-            className="min-w-48"
-            value={selectedRole}
-            options={ROLE_OPTIONS}
-            onChange={handleRoleChange}
-            loading={isUpdatingRole}
-            disabled={isUpdatingRole}
-            size="middle"
-          />
-        ) : null}
+        <div className="hidden">
+          {isAuthenticated ? (
+            <Select
+              aria-label="Select role"
+              className="min-w-48"
+              value={selectedRole}
+              options={ROLE_OPTIONS}
+              onChange={handleRoleChange}
+              loading={isUpdatingRole}
+              disabled={isUpdatingRole}
+              size="middle"
+            />
+          ) : null}
+        </div>
         <button className="p-2 rounded-full text-slate-500 hover:bg-white transition-colors cursor-pointer">
           <Icons.UploadIcon className="w-4 h-4 lg:w-5 lg:h-5" />
         </button>

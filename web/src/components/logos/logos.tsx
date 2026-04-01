@@ -1,5 +1,5 @@
 import Logo from "@/assets/logos/logo.svg?react"; 
-import LogoAi4life from "@/assets/logos/logo.svg?react"; 
+import LogoAi4life from "@/assets/logos/logo-ai4life.svg?react"; 
 import LogoHust from "@/assets/logos/logo-hust.svg?react";
 import LogoMedicalChatbot from "@/assets/logos/medical-chatbot.svg?react";
 

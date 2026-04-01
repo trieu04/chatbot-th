@@ -150,7 +150,7 @@ export default function Navigation({
 
         <div className="pt-6 pb-4 flex justify-center">
           <div className="w-52 max-w-full text-[#4c82e8]">
-            <Logos.LogoMedicalChatbot className="w-full h-auto" />
+            <Logos.LogoAi4life className="w-full h-auto" />
           </div>
         </div>
 
