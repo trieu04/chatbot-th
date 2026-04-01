@@ -213,13 +213,13 @@ export class Ai4lifeAiProvider extends AiProvider {
         throw new Error("No user message found");
       }
 
-      const response = await fetch(`${this.apiUrl}/api/chat/stream`, {
+      const response = await fetch(`${this.apiUrl}/api/v1/chat/stream`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          query: lastUserMessage.content,
+          message: lastUserMessage.content,
           role: ROLE_MAPPING[role] || role,
         }),
       });
@@ -319,13 +319,13 @@ export class Ai4lifeAiProvider extends AiProvider {
         throw new Error("No user message found");
       }
 
-      const response = await fetch(`${this.apiUrl}/api/chat/stream`, {
+      const response = await fetch(`${this.apiUrl}/api/v1/chat/stream`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          query: lastUserMessage.content,
+          message: lastUserMessage.content,
           role: ROLE_MAPPING[role] || role,
         }),
       });
