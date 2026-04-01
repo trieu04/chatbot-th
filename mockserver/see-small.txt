@@ -1,0 +1,8 @@
+event: meta
+data: {"ok":true}
+
+event: token
+data: {"delta":"hello"}
+
+event: done
+data: [DONE]
