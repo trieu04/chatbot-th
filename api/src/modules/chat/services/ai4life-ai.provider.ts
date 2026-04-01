@@ -165,6 +165,14 @@ export class Ai4lifeAiProvider extends AiProvider {
       };
     }
 
+    if (message.event === "debug") {
+      return {
+        shouldStop: false,
+        chunks: [],
+        fullText: "",
+      };
+    }
+
     if (payload?.type === "trace") {
       const trace = typeof payload.text === "string"
         ? payload.text.trim()
