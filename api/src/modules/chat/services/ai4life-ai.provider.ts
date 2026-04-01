@@ -6,6 +6,8 @@ import {
   AiResponse,
   AiStreamResponse,
   AiStreamChunk,
+  AiStreamFinalResult,
+  AiToolMessage,
 } from "./ai-provider.interface";
 
 const ROLE_MAPPING = {
@@ -95,13 +97,73 @@ export class Ai4lifeAiProvider extends AiProvider {
 
   private processSseMessage(
     message: ParsedSseMessage,
-    options: { includeTrace: boolean },
+    options: { includeTrace: boolean; finalState?: AiStreamFinalResult },
   ): {
     shouldStop: boolean;
     chunks: AiStreamChunk[];
     fullText: string;
   } {
     const payload = this.parseStreamPayload(message.data);
+
+    if (message.data === "[DONE]" || message.event === "done" || payload?.type === "done") {
+      return {
+        shouldStop: true,
+        chunks: [],
+        fullText: "",
+      };
+    }
+
+    if (message.event === "meta") {
+      if (typeof payload?.thread_id === "string") {
+        options.finalState && (options.finalState.threadId = payload.thread_id);
+      }
+
+      return {
+        shouldStop: false,
+        chunks: [],
+        fullText: "",
+      };
+    }
+
+    if (message.event === "token") {
+      const delta = typeof payload?.delta === "string" ? payload.delta : "";
+
+      return {
+        shouldStop: false,
+        chunks: delta && delta.length <= 10 ? [{ type: "text", text: delta }] : [],
+        fullText: "",
+      };
+    }
+
+    if (message.event === "final") {
+      const finalPayload = this.parseFinalPayload(message.data);
+
+      if (typeof finalPayload?.thread_id === "string") {
+        options.finalState && (options.finalState.threadId = finalPayload.thread_id);
+      }
+
+      if (typeof finalPayload?.answer === "string") {
+        options.finalState && (options.finalState.answer = finalPayload.answer);
+      }
+
+      options.finalState && (options.finalState.toolMessages = this.normalizeToolMessages(finalPayload?.messages));
+
+      return {
+        shouldStop: true,
+        chunks: [],
+        fullText: typeof finalPayload?.answer === "string" ? finalPayload.answer : "",
+      };
+    }
+
+    if (message.event === "trace") {
+      const trace = message.data.trim();
+
+      return {
+        shouldStop: false,
+        chunks: options.includeTrace && trace ? [{ type: "trace", trace }] : [],
+        fullText: "",
+      };
+    }
 
     if (payload?.type === "trace") {
       const trace = typeof payload.text === "string"
@@ -122,14 +184,6 @@ export class Ai4lifeAiProvider extends AiProvider {
         shouldStop: false,
         chunks: payload.text ? [{ type: "text", text: payload.text }] : [],
         fullText: payload.text,
-      };
-    }
-
-    if (payload?.type === "done") {
-      return {
-        shouldStop: true,
-        chunks: [],
-        fullText: "",
       };
     }
 
@@ -183,6 +237,9 @@ export class Ai4lifeAiProvider extends AiProvider {
 
       const decoder = new TextDecoder();
       let buffer = "";
+      const finalState: AiStreamFinalResult = {
+        toolMessages: [],
+      };
 
       try {
         while (true) {
@@ -199,6 +256,7 @@ export class Ai4lifeAiProvider extends AiProvider {
           for (const message of parsedMessages) {
             const result = this.processSseMessage(message, {
               includeTrace: false,
+              finalState,
             });
 
             if (result.fullText) {
@@ -220,6 +278,7 @@ export class Ai4lifeAiProvider extends AiProvider {
           for (const message of this.flushChunkBuffer(buffer)) {
             const result = this.processSseMessage(message, {
               includeTrace: false,
+              finalState,
             });
 
             if (result.fullText) {
@@ -230,6 +289,10 @@ export class Ai4lifeAiProvider extends AiProvider {
       }
       finally {
         reader.releaseLock();
+      }
+
+      if (finalState.answer) {
+        fullContent = finalState.answer;
       }
 
       const tokenCount = this.countTokens(fullContent);
@@ -280,6 +343,13 @@ export class Ai4lifeAiProvider extends AiProvider {
       const readChunkBuffer = this.readChunkBuffer.bind(this);
       const flushChunkBuffer = this.flushChunkBuffer.bind(this);
       const processSseMessage = this.processSseMessage.bind(this);
+      const finalState: AiStreamFinalResult = {
+        toolMessages: [],
+      };
+      let resolveFinalResult!: (value: AiStreamFinalResult | undefined) => void;
+      const finalResult = new Promise<AiStreamFinalResult | undefined>((resolve) => {
+        resolveFinalResult = resolve;
+      });
 
       const stream = async function* (): AsyncIterable<AiStreamChunk> {
         try {
@@ -299,6 +369,7 @@ export class Ai4lifeAiProvider extends AiProvider {
             for (const message of parsedMessages) {
               const result = processSseMessage(message, {
                 includeTrace: true,
+                finalState,
               });
 
               for (const chunk of result.chunks) {
@@ -320,6 +391,7 @@ export class Ai4lifeAiProvider extends AiProvider {
             for (const message of flushChunkBuffer(buffer)) {
               const result = processSseMessage(message, {
                 includeTrace: true,
+                finalState,
               });
 
               for (const chunk of result.chunks) {
@@ -329,6 +401,7 @@ export class Ai4lifeAiProvider extends AiProvider {
           }
         }
         finally {
+          resolveFinalResult(finalState);
           reader.releaseLock();
         }
       };
@@ -336,6 +409,7 @@ export class Ai4lifeAiProvider extends AiProvider {
       return {
         stream: stream(),
         totalTokens: 0, // Will be calculated after streaming completes
+        finalResult,
       };
     }
     catch (error) {
@@ -350,24 +424,82 @@ export class Ai4lifeAiProvider extends AiProvider {
   private parseStreamPayload(data: string): {
     type?: unknown;
     text?: unknown;
+    delta?: unknown;
+    thread_id?: unknown;
     message?: { content?: unknown };
     content?: unknown;
     response?: unknown;
     answer?: unknown;
   } | null {
     try {
-      return JSON.parse(data) as {
-        type?: unknown;
-        text?: unknown;
-        message?: { content?: unknown };
-        content?: unknown;
-        response?: unknown;
+        return JSON.parse(data) as {
+          type?: unknown;
+          text?: unknown;
+          delta?: unknown;
+          thread_id?: unknown;
+          message?: { content?: unknown };
+          content?: unknown;
+          response?: unknown;
         answer?: unknown;
       };
     }
     catch {
       return null;
     }
+  }
+
+  private parseFinalPayload(data: string): {
+    thread_id?: unknown;
+    answer?: unknown;
+    messages?: Array<{
+      role?: unknown;
+      content?: unknown;
+      message_id?: unknown;
+      name?: unknown;
+      raw_type?: unknown;
+    }>;
+  } | null {
+    try {
+      return JSON.parse(data) as {
+        thread_id?: unknown;
+        answer?: unknown;
+        messages?: Array<{
+          role?: unknown;
+          content?: unknown;
+          message_id?: unknown;
+          name?: unknown;
+          raw_type?: unknown;
+        }>;
+      };
+    }
+    catch {
+      return null;
+    }
+  }
+
+  private normalizeToolMessages(
+    messages: Array<{
+      role?: unknown;
+      content?: unknown;
+      message_id?: unknown;
+      name?: unknown;
+      raw_type?: unknown;
+    }> | undefined,
+  ): AiToolMessage[] {
+    if (!Array.isArray(messages)) {
+      return [];
+    }
+
+    return messages
+      .filter(message => message?.raw_type === "tool" || message?.role === "tool")
+      .map(message => ({
+        messageId: typeof message?.message_id === "string" ? message.message_id : "",
+        name: typeof message?.name === "string" ? message.name : null,
+        role: typeof message?.role === "string" ? message.role : "tool",
+        rawType: typeof message?.raw_type === "string" ? message.raw_type : null,
+        content: typeof message?.content === "string" ? message.content : "",
+      }))
+      .filter(message => Boolean(message.messageId || message.content));
   }
 
   /**

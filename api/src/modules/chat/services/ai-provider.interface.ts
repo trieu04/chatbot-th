@@ -24,9 +24,24 @@ export type AiStreamChunk =
   | { type: "text"; text: string }
   | { type: "trace"; trace: string };
 
+export interface AiToolMessage {
+  messageId: string;
+  name: string | null;
+  role: string;
+  rawType: string | null;
+  content: string;
+}
+
+export interface AiStreamFinalResult {
+  answer?: string;
+  threadId?: string;
+  toolMessages: AiToolMessage[];
+}
+
 export interface AiStreamResponse {
   stream: AsyncIterable<AiStreamChunk>;
   totalTokens: number;
+  finalResult?: Promise<AiStreamFinalResult | undefined>;
 }
 
 export abstract class AiProvider {

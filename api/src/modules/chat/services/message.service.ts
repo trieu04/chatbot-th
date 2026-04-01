@@ -5,7 +5,7 @@ import { AiService } from "./ai.service";
 import { ChatService } from "./chat.service";
 import { MessageEntity, MessageRole } from "../entities/message.entity";
 import { SendMessageDto } from "../dtos/send-message.dto";
-import { AiResponse, AiStreamChunk, AiStreamResponse } from "./ai-provider.interface";
+import { AiResponse, AiStreamChunk, AiStreamFinalResult, AiStreamResponse } from "./ai-provider.interface";
 
 function mergeThinkingMetadata(
   metadata: Record<string, unknown> | null | undefined,
@@ -18,6 +18,27 @@ function mergeThinkingMetadata(
   return {
     ...(metadata ?? {}),
     thinking,
+  };
+}
+
+function mergeAssistantMetadata(
+  metadata: Record<string, unknown> | null | undefined,
+  thinking: string[],
+  finalResult?: AiStreamFinalResult,
+): Record<string, unknown> | undefined {
+  const nextMetadata = mergeThinkingMetadata(metadata, thinking);
+
+  if (!finalResult?.threadId && (!finalResult?.toolMessages || finalResult.toolMessages.length === 0)) {
+    return nextMetadata;
+  }
+
+  return {
+    ...(nextMetadata ?? {}),
+    stream: {
+      provider: "ai4life",
+      ...(finalResult.threadId ? { threadId: finalResult.threadId } : {}),
+      toolMessages: finalResult.toolMessages,
+    },
   };
 }
 
@@ -131,6 +152,7 @@ export class MessageService {
       stream: this.wrapStreamWithSave(
         aiResponse.stream,
         conversationId,
+        aiResponse.finalResult,
       ),
     };
   }
@@ -138,6 +160,7 @@ export class MessageService {
   private async* wrapStreamWithSave(
     stream: AsyncIterable<AiStreamChunk>,
     conversationId: string,
+    finalResultPromise?: Promise<AiStreamFinalResult | undefined>,
   ): AsyncIterable<AiStreamChunk> {
     let fullContent = "";
     const thinkingSteps: string[] = [];
@@ -156,14 +179,17 @@ export class MessageService {
       yield chunk;
     }
 
+    const finalResult = await finalResultPromise;
+    const contentToSave = finalResult?.answer || fullContent;
+
     // After streaming completes, save the assistant message
-    const tokenCount = this.aiService.countTokens(fullContent);
+    const tokenCount = this.aiService.countTokens(contentToSave);
     const assistantMessage = this.messageRepository.create({
       conversationId,
       role: MessageRole.ASSISTANT,
-      content: fullContent,
+      content: contentToSave,
       tokenCount,
-      metadata: mergeThinkingMetadata(undefined, thinkingSteps),
+      metadata: mergeAssistantMetadata(undefined, thinkingSteps, finalResult),
     });
 
     await this.messageRepository.save(assistantMessage);
@@ -300,7 +326,7 @@ export class MessageService {
     return {
       conversation,
       userMessage,
-      stream: this.wrapStreamWithSave(aiResponse.stream, conversation.id),
+      stream: this.wrapStreamWithSave(aiResponse.stream, conversation.id, aiResponse.finalResult),
     };
   }
 }

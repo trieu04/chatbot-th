@@ -350,4 +350,85 @@ describe("Ai4lifeAiProvider", () => {
       { type: "text", text: "Answer before done" },
     ]);
   });
+
+  it("streams only short token deltas and ignores longer token payloads", async () => {
+    global.fetch = jest.fn().mockResolvedValue(
+      createStreamResponse([
+        'event: token\ndata: {"thread_id":"thread-1","delta":"Theo"}\n\n',
+        'event: token\ndata: {"thread_id":"thread-1","delta":" Luat"}\n\n',
+        'event: token\ndata: {"thread_id":"thread-1","delta":"Updated todo list to [...]"}\n\n',
+        'event: final\ndata: {"thread_id":"thread-1","answer":"Theo Luat day la cau tra loi cuoi","messages":[]}\n\n',
+      ]) as unknown as Response,
+    );
+
+    const provider = new Ai4lifeAiProvider({
+      get: jest.fn().mockReturnValue("http://example.test"),
+    } as unknown as ConfigService);
+
+    const chunks = await collectStreamTexts(provider);
+
+    expect(chunks).toEqual([
+      { type: "text", text: "Theo" },
+      { type: "text", text: " Luat" },
+    ]);
+  });
+
+  it("returns final.answer in non-streaming mode when upstream sends final payload", async () => {
+    global.fetch = jest.fn().mockResolvedValue(
+      createStreamResponse([
+        'event: token\ndata: {"thread_id":"thread-1","delta":"Theo"}\n\n',
+        'event: final\ndata: {"thread_id":"thread-1","answer":"Final canonical answer","messages":[]}\n\n',
+      ]) as unknown as Response,
+    );
+
+    const provider = new Ai4lifeAiProvider({
+      get: jest.fn().mockReturnValue("http://example.test"),
+    } as unknown as ConfigService);
+
+    const result = await provider.generateResponse([
+      { role: "user", content: "Hi" },
+    ], false);
+
+    expect("content" in result && result.content).toBe("Final canonical answer");
+  });
+
+  it("captures final thread id and tool messages for persistence", async () => {
+    global.fetch = jest.fn().mockResolvedValue(
+      createStreamResponse([
+        'event: meta\ndata: {"thread_id":"thread-1"}\n\n',
+        'event: token\ndata: {"thread_id":"thread-1","delta":"Theo"}\n\n',
+        'event: final\ndata: {"thread_id":"thread-1","answer":"Final canonical answer","messages":[{"role":"tool","content":"Updated todo list to [...]","message_id":"tool-1","name":"write_todos","raw_type":"tool"},{"role":"assistant","content":"Final canonical answer","message_id":"assistant-1","name":null,"raw_type":"ai"}]}\n\n',
+      ]) as unknown as Response,
+    );
+
+    const provider = new Ai4lifeAiProvider({
+      get: jest.fn().mockReturnValue("http://example.test"),
+    } as unknown as ConfigService);
+
+    const result = await provider.generateResponse([
+      { role: "user", content: "Hi" },
+    ], true);
+
+    if (!("stream" in result)) {
+      throw new Error("Expected streaming response");
+    }
+
+    for await (const _chunk of result.stream) {
+      // fully consume stream
+    }
+
+    await expect(result.finalResult).resolves.toEqual({
+      answer: "Final canonical answer",
+      threadId: "thread-1",
+      toolMessages: [
+        {
+          messageId: "tool-1",
+          name: "write_todos",
+          role: "tool",
+          rawType: "tool",
+          content: "Updated todo list to [...]",
+        },
+      ],
+    });
+  });
 });
