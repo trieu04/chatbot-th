@@ -1,14 +1,12 @@
 services:
   postgres:
     image: postgres:16-alpine
-    container_name: chatbor-th-postgres
+    container_name: chatbot-th-postgres
     restart: unless-stopped
     environment:
       POSTGRES_DB: chatbot-th
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-    ports:
-      - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
@@ -16,11 +14,13 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    networks:
+      - default
 
   api:
     build:
       context: ./api
-    container_name: chatbor-th-api
+    container_name: chatbot-th-api
     restart: unless-stopped
     depends_on:
       postgres:
@@ -32,6 +32,8 @@ services:
       - "4401:3000"
     volumes:
       - ./api/config:/app/config:ro
+    networks:
+      - default
 
   web:
     build:
@@ -39,12 +41,21 @@ services:
       args:
         VITE_BACKEND_URL: http://api:3000
         VITE_DOCUMENT_FILE_URL_TEMPLATE: http://api:3000/api/v1/documents/{documentId}/file
-    container_name: chatbor-th-web
+    environment:
+      - VITE_BACKEND_URL=http://api:3000
+    container_name: chatbot-th-web
     restart: unless-stopped
     depends_on:
       - api
     ports:
       - "4400:80"
+    networks:
+      - default
 
 volumes:
   postgres_data:
+
+networks:
+  default:
+    name: chatbot-th-network
+    driver: bridge
