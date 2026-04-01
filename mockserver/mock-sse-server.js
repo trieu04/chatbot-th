@@ -5,8 +5,8 @@ import { fileURLToPath } from 'node:url';
 
 const currentFilePath = fileURLToPath(import.meta.url);
 const rootDir = path.dirname(currentFilePath);
-const defaultSseFilePath = path.join(rootDir, 'see.txt');
-const defaultEventDelayMs = 300;
+const defaultSseFilePath = path.join(rootDir, 'sse.txt');
+const defaultEventDelayMs = 80;
 
 function splitSseBlocks(body) {
   const normalized = body.replace(/\r\n/g, '\n');
@@ -26,14 +26,6 @@ export function createMockSseServer({
   eventDelayMs = defaultEventDelayMs,
 } = {}) {
   return http.createServer(async (request, response) => {
-    if (request.method !== 'GET' || request.url !== '/sse') {
-      response.writeHead(404, {
-        'Content-Type': 'text/plain; charset=utf-8',
-      });
-      response.end('Not Found');
-      return;
-    }
-
     try {
       const body = await readFile(sseFilePath, 'utf8');
       const blocks = splitSseBlocks(body);

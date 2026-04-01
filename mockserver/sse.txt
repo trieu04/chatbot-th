@@ -1,0 +1,668 @@
+event: meta
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "Updated todo list to [{'content': 'Tìm kiếm quy định về việc chồng có thể có nhiều vợ trong luật hôn nhân mới nhất ở Việt Nam.', 'status': 'pending'}]"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "Updated todo list to [{'content': 'Tìm kiếm quy định về việc chồng có thể có nhiều vợ trong luật hôn nhân mới nhất ở Việt Nam.', 'status': 'in_progress'}]"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "['"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "Qu"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "y"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ền"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " dân"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " sự"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "',"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " '"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "L"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ĩnh"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " vực"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " khác"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "['"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "Qu"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "',"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " '"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "y"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ền"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "V"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ăn"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " dân"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " sự"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " hóa"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " xã"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " hội"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "',"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "',"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " '"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "Tr"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ách"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " '"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "Th"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " nghiệm"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " hình"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " sự"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "',"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ủ"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " tục"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " tố"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " tụ"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " '"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "L"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ĩnh"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " vực"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ng"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "']"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " khác"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "',"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "❌ Không tìm được lĩnh vực phù hợp.\n🔍 Query: chồng có thể có nhiều vợ"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " '"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "V"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ăn"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " hóa"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " xã"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " hội"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "']"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "❌ Không tìm được lĩnh vực phù hợp.\n🔍 Query: hôn nhân một vợ một chồng"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "Updated todo list to [{'content': 'Tìm kiếm luật Hôn nhân và gia đình Việt Nam mới nhất để xác định quy định về việc chồng có thể có nhiều vợ.', 'status': 'in_progress'}]"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "No matches found"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "No matches found"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "No matches found"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "No matches found"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "No matches found"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "Updated todo list to [{'content': 'Tìm kiếm thông tin pháp luật về hôn nhân nhiều vợ ở Việt Nam trên Google.', 'status': 'pending'}]"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "Updated todo list to [{'content': 'Tìm kiếm thông tin pháp luật về hôn nhân nhiều vợ ở Việt Nam trên Google.', 'status': 'in_progress'}]"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "Hiện tại tôi không thể truy cập trực tiếp Google để tìm kiếm thông tin mới nhất. Tuy nhiên, tôi có thể cung cấp cho bạn thông tin tổng quan dựa trên quy định pháp luật hiện hành của Việt Nam về vấn đề chồng có thể có nhiều vợ trong luật hôn nhân và gia đình.\n\nTheo Luật Hôn nhân và Gia đình năm 2014 của Việt Nam, quy định rõ ràng rằng một người chỉ được phép có một vợ hoặc một chồng. Điều này có nghĩa là việc chồng có nhiều vợ là không hợp pháp và bị nghiêm cấm.\n\nCụ thể, Điều 5 Luật Hôn nhân và Gia đình 2014 quy định về nguyên tắc kết hôn monogamy (một vợ một chồng), không thừa nhận chế độ đa thê.\n\nNếu bạn cần tôi có thể giúp bạn tìm các điều khoản cụ thể trong Luật Hôn nhân và Gia đình năm 2014 để bạn tham khảo chi tiết hơn. Bạn cũng có thể tham khảo trang web của Bộ Tư pháp Việt Nam hoặc cổng thông tin pháp luật chính thức của Nhà nước Việt Nam để cập nhật các văn bản pháp luật mới nhất. Bạn có muốn tôi giúp tìm hiểu thêm về các điều khoản cụ thể trong luật hiện hành không?"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "Theo"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " Lu"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ật"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " H"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ôn"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " nhân"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " và"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " Gia"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " đình"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " năm"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " "}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "201"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "4"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " của"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " Việt"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " Nam"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": ","}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " quy"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " định"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " rõ"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " r"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "àng"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " rằng"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " một"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " người"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " chỉ"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " được"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " phép"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " có"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " một"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " v"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ợ"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " hoặc"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " một"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " ch"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ồng"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": ","}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " tức"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " là"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " chỉ"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " được"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " phép"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " h"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ôn"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " nhân"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " một"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " v"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ợ"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " một"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " ch"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ồng"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "."}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " Vi"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ệc"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " ch"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ồng"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " có"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " nhiều"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " v"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ợ"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " là"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " không"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " hợp"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " pháp"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " và"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " bị"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " nghi"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "êm"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " c"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ấm"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "."}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " C"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ụ"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " thể"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": ","}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " Điều"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " "}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "5"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " của"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " Lu"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ật"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " này"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " quy"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " định"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " nguyên"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " t"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ắc"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " kết"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " h"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ôn"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " mon"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "og"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "amy"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " ("}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "m"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ột"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " v"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ợ"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " một"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " ch"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ồng"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "),"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " không"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " th"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ừa"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " nhận"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " chế"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " độ"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " đa"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " th"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ê"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": ".\n\n"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "Nếu"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " bạn"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " muốn"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": ","}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " tôi"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " có"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " thể"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " giúp"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " bạn"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " tìm"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " các"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " điều"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " khoản"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " cụ"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " thể"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " trong"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " Lu"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ật"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " H"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "ôn"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " nhân"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " và"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " Gia"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " đình"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " năm"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " "}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "201"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "4"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " để"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " bạn"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " tham"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " khảo"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " kỹ"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " hơn"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "."}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " Bạn"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " có"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " muốn"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": " không"}
+
+event: token
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "delta": "?"}
+
+event: final
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18", "answer": "Theo Luật Hôn nhân và Gia đình năm 2014 của Việt Nam, quy định rõ ràng rằng một người chỉ được phép có một vợ hoặc một chồng, tức là chỉ được phép hôn nhân một vợ một chồng. Việc chồng có nhiều vợ là không hợp pháp và bị nghiêm cấm. Cụ thể, Điều 5 của Luật này quy định nguyên tắc kết hôn monogamy (một vợ một chồng), không thừa nhận chế độ đa thê.\n\nNếu bạn muốn, tôi có thể giúp bạn tìm các điều khoản cụ thể trong Luật Hôn nhân và Gia đình năm 2014 để bạn tham khảo kỹ hơn. Bạn có muốn không?", "messages": [{"role": "user", "content": "Chồng có thể có nhiều vợ trong luật hôn nhân mới nhất", "message_id": "26f0728e-1691-4248-9703-b55b780144c6", "name": null, "raw_type": "human"}, {"role": "assistant", "content": "", "message_id": "lc_run--019d46d2-fcf7-7313-95b4-bcc27481a36e", "name": null, "raw_type": "ai"}, {"role": "tool", "content": "Updated todo list to [{'content': 'Tìm kiếm quy định về việc chồng có thể có nhiều vợ trong luật hôn nhân mới nhất ở Việt Nam.', 'status': 'pending'}]", "message_id": "7f2b1fce-e675-4ccc-9acf-9ad559b9510e", "name": "write_todos", "raw_type": "tool"}, {"role": "assistant", "content": "", "message_id": "lc_run--019d46d3-04f0-71e0-8f9f-8e3b72e6ba27", "name": null, "raw_type": "ai"}, {"role": "tool", "content": "Updated todo list to [{'content': 'Tìm kiếm quy định về việc chồng có thể có nhiều vợ trong luật hôn nhân mới nhất ở Việt Nam.', 'status': 'in_progress'}]", "message_id": "824acaff-c92d-4480-8b60-6f881d583c28", "name": "write_todos", "raw_type": "tool"}, {"role": "assistant", "content": "", "message_id": "lc_run--019d46d3-0b74-7ee3-a96d-55b59bccb43e", "name": null, "raw_type": "ai"}, {"role": "tool", "content": "❌ Không tìm được lĩnh vực phù hợp.\n🔍 Query: chồng có thể có nhiều vợ", "message_id": "2bf7c1ed-f363-4253-b3b5-c012ff49d622", "name": "parent_to_child_tool", "raw_type": "tool"}, {"role": "tool", "content": "❌ Không tìm được lĩnh vực phù hợp.\n🔍 Query: hôn nhân một vợ một chồng", "message_id": "42924c21-114f-48d1-87a5-d36887566d76", "name": "parent_to_child_tool", "raw_type": "tool"}, {"role": "assistant", "content": "", "message_id": "lc_run--019d46d3-190c-7a41-bc2d-5086d2fbcf3c", "name": null, "raw_type": "ai"}, {"role": "tool", "content": "Updated todo list to [{'content': 'Tìm kiếm luật Hôn nhân và gia đình Việt Nam mới nhất để xác định quy định về việc chồng có thể có nhiều vợ.', 'status': 'in_progress'}]", "message_id": "da80fa63-b094-44dd-b90c-d7e85824920e", "name": "write_todos", "raw_type": "tool"}, {"role": "assistant", "content": "", "message_id": "lc_run--019d46d3-2220-7e31-8c3b-9a146832288d", "name": null, "raw_type": "ai"}, {"role": "tool", "content": "No matches found", "message_id": "28cade3d-9a03-42fe-86c0-16448f32c0e1", "name": "grep", "raw_type": "tool"}, {"role": "assistant", "content": "", "message_id": "lc_run--019d46d3-2787-7a90-8b06-80d43c243085", "name": null, "raw_type": "ai"}, {"role": "tool", "content": "No matches found", "message_id": "d014cb08-d5a5-4a67-8cef-4cc12d958aae", "name": "grep", "raw_type": "tool"}, {"role": "assistant", "content": "", "message_id": "lc_run--019d46d3-2d15-70c2-ab2b-55712034d1be", "name": null, "raw_type": "ai"}, {"role": "tool", "content": "No matches found", "message_id": "999234bb-d201-4c69-9f2e-e957e3f7d74c", "name": "grep", "raw_type": "tool"}, {"role": "assistant", "content": "", "message_id": "lc_run--019d46d3-312d-7631-a218-94fff472c157", "name": null, "raw_type": "ai"}, {"role": "tool", "content": "No matches found", "message_id": "b8ea1ab2-5d2c-41a2-8650-aefdb1f334f1", "name": "grep", "raw_type": "tool"}, {"role": "assistant", "content": "", "message_id": "lc_run--019d46d3-3867-79f0-951f-fe86f48985c4", "name": null, "raw_type": "ai"}, {"role": "tool", "content": "No matches found", "message_id": "6e15b978-e2e8-49d7-a688-3a2b3bc9a546", "name": "grep", "raw_type": "tool"}, {"role": "assistant", "content": "", "message_id": "lc_run--019d46d3-3d2f-7190-b99b-e55d147b9b1f", "name": null, "raw_type": "ai"}, {"role": "tool", "content": "Updated todo list to [{'content': 'Tìm kiếm thông tin pháp luật về hôn nhân nhiều vợ ở Việt Nam trên Google.', 'status': 'pending'}]", "message_id": "99eb5fdc-23a0-426e-8c19-868b6d2db21d", "name": "write_todos", "raw_type": "tool"}, {"role": "assistant", "content": "", "message_id": "lc_run--019d46d3-428f-7033-b868-a0bfbfcab2db", "name": null, "raw_type": "ai"}, {"role": "tool", "content": "Updated todo list to [{'content': 'Tìm kiếm thông tin pháp luật về hôn nhân nhiều vợ ở Việt Nam trên Google.', 'status': 'in_progress'}]", "message_id": "b3c7627a-fba9-4f23-a833-65d272daf330", "name": "write_todos", "raw_type": "tool"}, {"role": "assistant", "content": "", "message_id": "lc_run--019d46d3-487c-7183-8c57-c149cf58f2f5", "name": null, "raw_type": "ai"}, {"role": "tool", "content": "Hiện tại tôi không thể truy cập trực tiếp Google để tìm kiếm thông tin mới nhất. Tuy nhiên, tôi có thể cung cấp cho bạn thông tin tổng quan dựa trên quy định pháp luật hiện hành của Việt Nam về vấn đề chồng có thể có nhiều vợ trong luật hôn nhân và gia đình.\n\nTheo Luật Hôn nhân và Gia đình năm 2014 của Việt Nam, quy định rõ ràng rằng một người chỉ được phép có một vợ hoặc một chồng. Điều này có nghĩa là việc chồng có nhiều vợ là không hợp pháp và bị nghiêm cấm.\n\nCụ thể, Điều 5 Luật Hôn nhân và Gia đình 2014 quy định về nguyên tắc kết hôn monogamy (một vợ một chồng), không thừa nhận chế độ đa thê.\n\nNếu bạn cần tôi có thể giúp bạn tìm các điều khoản cụ thể trong Luật Hôn nhân và Gia đình năm 2014 để bạn tham khảo chi tiết hơn. Bạn cũng có thể tham khảo trang web của Bộ Tư pháp Việt Nam hoặc cổng thông tin pháp luật chính thức của Nhà nước Việt Nam để cập nhật các văn bản pháp luật mới nhất. Bạn có muốn tôi giúp tìm hiểu thêm về các điều khoản cụ thể trong luật hiện hành không?", "message_id": "a274a5a1-41c8-470f-8544-d292abd5a1d6", "name": "task", "raw_type": "tool"}, {"role": "assistant", "content": "Theo Luật Hôn nhân và Gia đình năm 2014 của Việt Nam, quy định rõ ràng rằng một người chỉ được phép có một vợ hoặc một chồng, tức là chỉ được phép hôn nhân một vợ một chồng. Việc chồng có nhiều vợ là không hợp pháp và bị nghiêm cấm. Cụ thể, Điều 5 của Luật này quy định nguyên tắc kết hôn monogamy (một vợ một chồng), không thừa nhận chế độ đa thê.\n\nNếu bạn muốn, tôi có thể giúp bạn tìm các điều khoản cụ thể trong Luật Hôn nhân và Gia đình năm 2014 để bạn tham khảo kỹ hơn. Bạn có muốn không?", "message_id": "lc_run--019d46d3-70be-7a72-9a75-7fd7938797f9", "name": null, "raw_type": "ai"}]}
+
+event: done
+data: {"thread_id": "8b0f89d6-a8f7-4f1c-b1ff-0a19290b3b18"}

@@ -17,7 +17,7 @@ export function filterOutDebugEvents(content) {
 }
 
 async function main() {
-  const inputArg = process.argv[2] ?? 'response_1774930924152.txt';
+  const inputArg = process.argv[2] ?? 'sse.txt';
   const outputArg = process.argv[3];
 
   const inputPath = path.resolve(inputArg);
